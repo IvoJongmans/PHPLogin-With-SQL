@@ -9,11 +9,23 @@
 
 <h3>Create New User</h3>
     <form id="create-form" method="post" action="createuser.php" >            
+                <label for="new_user_name">Name:</label>
+                <input type="text" name="new_user_name" id="new_user_name"><br/>          
+                <label for="new_user_lastname">Lastname:</label>
+                <input type="text" name="new_user_lastname" id="new_user_lastname"><br/>           
+                <label for="new_user_street">Street:</label>
+                <input type="text" name="new_user_street" id="new_user_street"><br/>           
+                <label for="new_user_zcode">ZIP Code:</label>
+                <input type="text" name="new_user_zcode" id="new_user_zcode"><br/>           
+                <label for="new_user_id">City</label>
+                <input type="text" name="new_user_city" id="new_user_city"><br/>           
+                <label for="new_user_email">E-mail:</label>
+                <input type="text" name="new_user_email" id="new_user_email"><br/>           
                 <label for="new_user_id">New Username:</label>
-                <input type="text" name="new_user_id" id="new_user_id">           
+                <input type="text" name="new_user_id" id="new_user_id"><br/>           
                 <label for="new_user_pass">New Password:</label>
-                <input type="password" name="new_user_pass" id="new_user_pass">			
-                <input type="submit" value="Submit">
+                <input type="password" name="new_user_pass" id="new_user_pass"><br/>			
+                <input type="submit" value="Create"><br/>
                 <input type="reset" value="Reset">        
     </form>
 </div>
