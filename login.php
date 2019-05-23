@@ -1,7 +1,7 @@
 <?php 
 // login.php
 $hn = 'localhost';
-$db = 'testnames';
+$db = 'logindata';
 $un = 'root';
 $pw = 'Meterkast15b';
 ?>
