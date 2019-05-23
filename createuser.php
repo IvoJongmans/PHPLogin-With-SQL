@@ -30,7 +30,7 @@ $sqlcreatetable = "CREATE TABLE $newusername (
                     '$newstreet', '$newzcode', '$newcity', '$newemail')";
   $storenewuser = $conn->prepare($sqlstorenewuser);
   $storenewuser->execute();
-  header('Location: index.php');
+  header('Location: login.php');
 }
 else{
 echo "<script type='text/javascript'>alert('This user already exists:(')</script>";

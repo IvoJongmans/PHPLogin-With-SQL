@@ -10,6 +10,5 @@ $fetch = array();
   while($row = $getuserdata->fetch(PDO::FETCH_ASSOC)) {
     $fetch = $row;
   }
-  echo json_encode($fetch);
-  
+  echo json_encode($fetch);  
 ?>

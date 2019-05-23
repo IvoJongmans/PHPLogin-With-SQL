@@ -1,6 +1,5 @@
 <?php
  session_start();
- echo $_SESSION['user']." has logged in succesfully!";
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +12,8 @@
     <script src="getuserdata.js" defer></script>
 </head>
 <body>
-    <p>WELKOM!</p>
+    <div id="userres">
+
+    </div>
 </body>
 </html>

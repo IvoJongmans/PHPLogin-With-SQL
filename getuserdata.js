@@ -1,3 +1,7 @@
 $.post("getuserdata.php", function(data){
-    return console.log(data);
+    console.log(data);
+    $.each(data, function(i ,item){
+        // console.log(item);
+        $("#userres").append(item + "<br/>");
+    });
   });
