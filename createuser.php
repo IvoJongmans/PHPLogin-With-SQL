@@ -15,7 +15,6 @@ $addnewuser = $conn->prepare($sql);
 $addnewuser->execute();
 $count = $addnewuser->rowCount();
 if ($count == 1){
-echo "<script type='text/javascript'>alert('$newusername')</script>";
 $sqlcreatetable = "CREATE TABLE $newusername (
     name varchar(255) NOT NULL,
     lastname varchar(255) NOT NULL,
@@ -31,7 +30,7 @@ $sqlcreatetable = "CREATE TABLE $newusername (
                     '$newstreet', '$newzcode', '$newcity', '$newemail')";
   $storenewuser = $conn->prepare($sqlstorenewuser);
   $storenewuser->execute();
-
+  header('Location: index.php');
 }
 else{
 echo "<script type='text/javascript'>alert('This user already exists:(')</script>";

@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -21,9 +18,6 @@
     </form>
 </div>
 
-<?php
-    $_SESSION['user_id'];
-?>
 </body>
 </html>
 
