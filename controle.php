@@ -10,9 +10,11 @@ $controle->execute();
 $count = $controle->rowCount();;
 if ($count == 1){
 echo "<script type='text/javascript'>alert('Logingegevens correct!')</script>";
+header('Location: succes.php');
 }
 else{
 echo "<script type='text/javascript'>alert('Logingegevens incorrect:(')</script>";
+header('Location: createuser.html');
 }
 }
 ?>
