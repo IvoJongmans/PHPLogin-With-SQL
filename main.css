@@ -8,23 +8,6 @@ body {
     height: 60px;
     background-color: #314059;
 }
-
-.push {
-    height: 60px;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #314059;
-    color: #f2ec3e;
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
- }
-
  #navlist li {
      color: #f2ec3e;
      font-size: 20px;
@@ -45,15 +28,27 @@ body {
 
  #dropdownicon {
      display: none; 
-     height: 100px;
      background-color: #314059;
-     margin-top: -31px;    
+     margin-top: -31px;   
  }
 
- #dropdownicon p {
+ #dropdownicon ul li {
      color: #f2ec3e;
-     padding: 60px;
+     list-style-type: none;
+     font-size: 18px; 
  }
+
+ #dropdownmenu {
+    display: none; 
+    background-color: #314059;
+    margin-top: -31px;    
+}
+
+#menucontent li {
+    color: #f2ec3e;
+    list-style-type: none;
+    font-size: 18px;
+}
 
 .fab {
     color: #f2ec3e; 
@@ -70,12 +65,30 @@ body {
     line-height: 60px;
     list-style-type: none;
     line-height: 60px;
+    margin-left: -35px;
     display: inline;
 }
 
  #hamburger {
      display: none;
  }
+
+ .push {
+    height: 60px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #314059;
+    color: #f2ec3e;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+ }
+
 
  @media only screen and (max-width: 815px) {
      #navlist {

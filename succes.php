@@ -19,9 +19,9 @@
 <body>    
 <div class="container-fluid">
     <div class="row" id="toprow">
-        <div class="col-sm-6 col-xs-1">
+        <div class="col-sm-6 col-xs-3">
             <ul id="hamburger">
-                <li><i class="fas fa-list-ul fa-3x"></i></li>
+                <li><i id="hamburgericon" class="fas fa-list-ul fa-3x"></i></li>
             </ul>
             <ul id="navlist">
                 <li>Home</li>
@@ -30,7 +30,7 @@
                 <li>Contact</li>
             </ul>
         </div>
-        <div class="col-sm-6 col-xs-11 text-right">
+        <div class="col-sm-6 col-xs-9 text-right">
         <ul id="iconlist">
                 <li><i id="usericon" class="far fa-user fa-2x"></i></li>
                 <li><i class="fab fa-joomla fa-2x""></i></li>
@@ -41,7 +41,17 @@
 </div>
 
 <div id="dropdownicon">
-    <p id="dataname"></p>
+    <ul id="dataname">
+        <li><a>Account Details</a></li>
+    </ul>
+</div>
+<div id="dropdownmenu">
+    <ul id="menucontent">
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Products</li>
+    <li>Contact</li
+    </ul>
 </div>
 
 <div class="footer">
