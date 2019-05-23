@@ -53,6 +53,10 @@
         <p>New to our page? Click <a href=createuser.html>here</a> to create an account</p>
     </div>
 </div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
 </body>
 </html>
 

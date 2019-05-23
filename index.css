@@ -4,3 +4,14 @@ body {
     color: #314059;
     background: linear-gradient(to bottom right, #f2ec3e, #cec929) no-repeat center center fixed;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #314059;
+    color: #f2ec3e;
+    text-align: center;
+    height: 60px;
+ }
