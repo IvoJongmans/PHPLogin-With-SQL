@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="getuserdata.js" defer></script>
+    <script src="jqueryfunctions.js" defer></script>
 </head>
 <body>    
 <div class="container-fluid">
@@ -45,6 +46,7 @@
         <li><a>Account Details</a></li>
     </ul>
 </div>
+
 <div id="dropdownmenu">
     <ul id="menucontent">
     <li>Home</li>
@@ -57,5 +59,6 @@
 <div class="footer">
     <p>Sitemap | End user license agreement | FAQ | Help</p>
 </div>
+
 </body>
 </html>
