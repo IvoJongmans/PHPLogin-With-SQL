@@ -43,6 +43,18 @@ body {
     padding-left: 10px;
  }
 
+ #dropdownicon {
+     display: none; 
+     height: 100px;
+     background-color: #314059;
+     margin-top: -31px;    
+ }
+
+ #dropdownicon p {
+     color: #f2ec3e;
+     padding: 60px;
+ }
+
 .fab {
     color: #f2ec3e; 
     line-height: 60px;

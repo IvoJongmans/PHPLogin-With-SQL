@@ -32,13 +32,18 @@
         </div>
         <div class="col-sm-6 col-xs-11 text-right">
         <ul id="iconlist">
-                <li><i class="far fa-user fa-2x"></i></li>
+                <li><i id="usericon" class="far fa-user fa-2x"></i></li>
                 <li><i class="fab fa-joomla fa-2x""></i></li>
             </ul>
             <!-- <i class="fab fa-joomla fa-2x""></i> -->
         </div>
     </div>
 </div>
+
+<div id="dropdownicon">
+    <p id="dataname"></p>
+</div>
+
 <div class="footer">
     <p>Sitemap | End user license agreement | FAQ | Help</p>
 </div>

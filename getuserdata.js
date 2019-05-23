@@ -1,8 +1,8 @@
 $.post("getuserdata.php", function(data){
-    console.log(data);
-    $.each(data, function(i ,item){
-        console.log(item);
-    });
+    console.log(data.name);
+    $("#dataname").append(data.name);
   });
 
-  
+$("#usericon").click(function(){
+    $("#dropdownicon").toggle();
+});
