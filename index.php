@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -17,5 +20,10 @@
                 <input type="reset" value="Reset">        
     </form>
 </div>
+
+<?php
+    $_SESSION['user_id'];
+?>
 </body>
 </html>
+

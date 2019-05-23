@@ -9,23 +9,6 @@ $newstreet = $_POST['new_user_street'];
 $newzcode = $_POST['new_user_zcode'];
 $newcity = $_POST['new_user_city'];
 $newemail = $_POST['new_user_email'];
-
-// $sqlcreatetable = "CREATE TABLE TEST (
-//     name varchar(255) NOT NULL,
-//     lastname varchar(255) NOT NULL,
-//     street varchar(255) NOT NULL,
-//     zipcode varchar(255) NOT NULL,
-//     city varchar(255) NOT NULL,
-//       email varchar(255) NOT NULL,
-//       lastname varchar(255) NOT NULL
-//   )";
-// $createtable = $conn->prepare($sqlcreatetable);
-// $createtable->execute();
-// $sqlstorenewuser = "INSERT INTO '$newusername' (name, lastname, street, 
-//                     zipcode, city, email) values ('$newname', '$newlastname', 
-//                     '$newstreet', '$newzcode', '$newcity', '$newemail')";
-// $storenewuser = $conn->prepare($sqlstorenewuser);
-// $storenewuser->execute();
 $sql = "INSERT INTO userdata (username, password) VALUES ('$newusername', '$newpassword')";
 $addnewuser = $conn->prepare($sql);
 // Ik moet de parameters nog binden. Excuus.
@@ -48,6 +31,7 @@ $sqlcreatetable = "CREATE TABLE $newusername (
                     '$newstreet', '$newzcode', '$newcity', '$newemail')";
   $storenewuser = $conn->prepare($sqlstorenewuser);
   $storenewuser->execute();
+
 }
 else{
 echo "<script type='text/javascript'>alert('This user already exists:(')</script>";
