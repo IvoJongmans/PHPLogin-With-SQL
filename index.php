@@ -24,7 +24,7 @@
     <div class="form-group">
       <label class="control-label col-sm-3" for="user_id">Username:</label>
       <div class="col-sm-6 col-sm-offset-right-3">
-        <input type="text" class="form-control" id="User_id" name="user_id" required>
+        <input type="text" class="form-control" id="user_id" name="user_id" required>
       </div>
     </div>
     <div class="form-group">
