@@ -4,4 +4,4 @@ $hn = 'localhost';
 $db = 'logindata';
 $un = 'root';
 $pw = 'Meterkast15b';
-?>
+?>  
