@@ -24,13 +24,6 @@ $.post("getuserdata.php", function(data){
     }
 });
 
-$.ajax({
-  url: 'https://api.zalando.com/articles',
-  method: 'GET',
-  success: function (data) {
-     console.log(data);
-  },
-  error: function (error) {
-      console.log(error);
-  }
-});
+$.post("chats.php", function(data){
+    console.log(data);
+  });

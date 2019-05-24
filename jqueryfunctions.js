@@ -18,3 +18,9 @@ $("#contact").click(function(){
     $(".toggle").hide();
     $("#contactcontainer").toggle();    
 });
+
+$("#chat").click(function(){
+    $(".toggle").hide();
+    $("#chatcontainer").toggle();    
+});
+
