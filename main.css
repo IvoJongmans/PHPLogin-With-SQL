@@ -17,6 +17,10 @@ body {
      padding-left: 10px;
  }
 
+ #navlist li:hover {
+     text-decoration: underline;
+ }
+
  #iconlist li {
     color: #f2ec3e;
     font-size: 20px;
@@ -89,7 +93,21 @@ body {
     line-height: 60px;
  }
 
+ #ad:hover {
+     text-decoration: underline;
+ }
+ 
+ #accdet {
+     display: none;
+ }
 
+ #accdet ul li {
+     list-style-type: none;
+ }
+
+ #contactcontainer {
+     display: none;
+ }
  @media only screen and (max-width: 815px) {
      #navlist {
          display: none;

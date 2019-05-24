@@ -4,6 +4,18 @@ $("#usericon").click(function(){
 });
 
 $("#hamburger").click(function(){
+    $(".toggle").hide();
     $("#dropdownmenu").toggle();
-    $("#dropdownicon").hide();
+    // $("#dropdownicon").hide();
+});
+
+$("#ad").click(function(){
+    $(".toggle").hide();
+    $("#accdet").toggle();
+});
+
+$("#contact").click(function(){
+    $(".toggle").hide();
+    $("#contactcontainer").toggle();
+    
 });

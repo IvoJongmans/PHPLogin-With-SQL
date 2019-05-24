@@ -29,7 +29,7 @@
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Products</li>
-                <li>Contact</li>
+                <li id="contact">Contact</li>
             </ul>
         </div>
         <div class="col-sm-6 col-xs-9 text-right">
@@ -42,9 +42,9 @@
     </div>
 </div>
 
-<div id="dropdownicon">
+<div id="dropdownicon" class="toggle">
     <ul id="dataname">
-        <li><a>Account Details</a></li>
+        <li id="ad">Account Details</li>
     </ul>
 </div>
 
@@ -57,10 +57,25 @@
     </ul>
 </div>
 
-<div class="container" id="accdet">TEST
+<div class="container toggle" id="accdet">
     <ul>
         <li v-for="item in items">{{item}}</li>
     </ul>
+    <button>EDIT</button>
+</div>
+
+<div class="container text-center toggle" id="contactcontainer">
+    <div class="col-sm-6" id="coninfo">
+        <h3>Contact</h3>
+        Ivo Jongmans<br/>
+        Sint Jansstraat 15B<br/>
+        9712JM Groningen<br/>
+        0592-378639
+
+    </div>
+    <div class="col-sm-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.9213957308166!2d6.565878539806426!3d53.21925771880466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd54aca0e929%3A0x8c77e014ff64ac27!2sCodegorilla!5e0!3m2!1snl!2snl!4v1558686050996!5m2!1snl!2snl" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 </div>
 
 <div class="footer">
