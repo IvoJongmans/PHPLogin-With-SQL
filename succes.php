@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="getuserdata.js" defer></script>
     <script src="jqueryfunctions.js" defer></script>
 </head>
@@ -53,6 +54,12 @@
     <li>About Us</li>
     <li>Products</li>
     <li>Contact</li
+    </ul>
+</div>
+
+<div class="container" id="accdet">TEST
+    <ul>
+        <li v-for="item in items">{{item}}</li>
     </ul>
 </div>
 
