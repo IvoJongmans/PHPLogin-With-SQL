@@ -16,6 +16,5 @@ $("#ad").click(function(){
 
 $("#contact").click(function(){
     $(".toggle").hide();
-    $("#contactcontainer").toggle();
-    
+    $("#contactcontainer").toggle();    
 });

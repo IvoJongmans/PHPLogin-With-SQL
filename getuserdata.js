@@ -3,14 +3,6 @@ $.post("getuserdata.php", function(data){
     $("#dataname").append("<li>" + data.name + "</li>-----<li></li>");
   });
 
-  $.ajax({
-    url: "getuserdata.php", 
-    method: "POST",
-    success: function(data){
-        self.items = data;
-    // console.log("TEST");
-  }});
-
   var ItemsVue = new Vue({
     el: '#accdet',
     data: {
@@ -30,4 +22,15 @@ $.post("getuserdata.php", function(data){
             }
         });
     }
+});
+
+$.ajax({
+  url: 'https://api.zalando.com/articles',
+  method: 'GET',
+  success: function (data) {
+     console.log(data);
+  },
+  error: function (error) {
+      console.log(error);
+  }
 });
