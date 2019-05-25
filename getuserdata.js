@@ -48,6 +48,7 @@ $.ajax({
                 ${value.username} zei op ${value.date}: <br/><br/>
                 ${value.message}
             </p>
+            <i class="fas fa-minus-circle"></i>
             </div>`);
         });
     },
