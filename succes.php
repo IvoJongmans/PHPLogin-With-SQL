@@ -79,16 +79,33 @@
     </div>
 
 <div class="container toggle" id="chatcontainer">
+<div class="row">
 <form class="form-horizontal" method="post" action="">
     <div class="form-group">
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-sm-4 col-sm-offset-2 col-xs-10">
         <input type="text" class="form-control" id="new_chat" name="new_chat">
       </div>
-      <button class="btn btn-info col-sm-2 col-sm-offset-right-4" type="submit" name='AddChat'>POST!</button>
+      <button class="btn btn-info col-sm-2 col-sm-offset-right-4 col-xs-2" type="submit" name='AddChat'>POST!</button>
     </div>
 </form>
-<div class="container text-center">
-Hier komen de chats.
+</div>
+<div class="container chatcontainer">
+        <!-- <div class="messageboxleft">
+            
+            <p>
+            Ivo zei op 23-43-2019<br/><br/>
+
+           YOLO in je polo!</p>
+            
+        </div>
+        <div class="messageboxright">
+            
+            <p>
+            Ivo zei op 23-43-2019<br/><br/>
+
+           YOLO in je polo!</p>
+            
+        </div> -->
 </div>
 </div>
 

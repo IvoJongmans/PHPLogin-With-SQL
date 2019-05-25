@@ -108,6 +108,27 @@ body {
  #contactcontainer {
      display: none;
  }
+
+ .messageboxleft {
+     color: #314059;
+     border: 3px solid #314059;
+     padding: 5px;
+     border-radius: 10px;
+     width: 60%;
+     margin-top: 5px;
+ }
+
+ .messageboxright {
+     float: right;
+     color: #314059;
+     border: 3px solid #314059;
+     padding: 5px;
+     border-radius: 10px;
+     width: 60%;
+     margin-top: 5px;
+     text-align: right;
+ }
+
  @media only screen and (max-width: 815px) {
      #navlist {
          display: none;
