@@ -117,6 +117,10 @@ if(isset($_POST['AddChat'])) {
 }
 ?>
 
+<div class="push">
+    
+</div>
+
 <div class="footer">
     <p>Sitemap | End user license agreement | FAQ | Help</p>
 </div>

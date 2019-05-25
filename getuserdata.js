@@ -42,7 +42,7 @@ $.ajax({
         $.each(data, function(index, value){
             console.log(value.username, value.message, value.date);
             leftright(value.messageid);
-            $(".chatcontainer").append(`
+            $(".chatcontainer").prepend(`
             <div class="col-xs-12 messagebox${leftright(value.messageid)}">
             <p> 
                 ${value.username} zei op ${value.date}: <br/><br/>
