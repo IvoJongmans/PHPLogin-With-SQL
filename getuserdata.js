@@ -1,5 +1,4 @@
 $.post("getuserdata.php", function(data){
-    console.log(data.name);
     $("#dataname").append("<li>" + data.name + "</li>-----<li></li>");
   });
 
@@ -15,7 +14,6 @@ $.post("getuserdata.php", function(data){
             method: 'POST',
             success: function (data) {
                 self.items = data;
-                console.log("vue.js data", data);
             },
             error: function (error) {
                 console.log(error);
@@ -24,6 +22,13 @@ $.post("getuserdata.php", function(data){
     }
 });
 
-$.post("chats.php", function(data){
-    console.log(data);
-  });
+$.ajax({
+    url: 'getchat.php',
+    method: 'POST',
+    success: function (data) {
+        console.log(data);
+    },
+    error: function (error) {
+        console.log(error);
+    }
+});

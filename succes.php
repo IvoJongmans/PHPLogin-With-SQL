@@ -79,18 +79,26 @@
     </div>
 
 <div class="container toggle" id="chatcontainer">
-<form class="form-horizontal" method="post" action="chat.php">
+<form class="form-horizontal" method="post" action="">
     <div class="form-group">
       <div class="col-sm-4 col-sm-offset-2">
-        <input type="text" class="form-control" id="new_chat" name="new_chat" required>
+        <input type="text" class="form-control" id="new_chat" name="new_chat">
       </div>
-      <button class="btn btn-info col-sm-2 col-sm-offset-right-4" type="submit">POST!</button>
+      <button class="btn btn-info col-sm-2 col-sm-offset-right-4" type="submit" name='AddChat'>POST!</button>
     </div>
 </form>
 <div class="container text-center">
+Hier komen de chats.
+</div>
+</div>
 
-</div>
-</div>
+
+<?php
+if(isset($_POST['AddChat'])) {
+    require('addchat.php');
+    header('Location: succes.php');
+}
+?>
 
 <div class="footer">
     <p>Sitemap | End user license agreement | FAQ | Help</p>
