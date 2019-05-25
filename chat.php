@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <title>Welcome!</title>
+    <title>Chat!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
@@ -64,24 +64,29 @@
     <button>EDIT</button>
 </div>
 
-<div class="container toggle" id="homecontainer">
-    <!-- <div class="col-sm-4 text-center">
-<img src="jeroen.jfif" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br>
+<div class="container toggle" id="chatcontainer">
+<div class="row">
+<form class="form-horizontal" method="post" action="">
+    <div class="form-group">
+      <div class="col-sm-4 col-sm-offset-2 col-xs-10">
+        <input type="text" class="form-control" id="new_chat" name="new_chat">
+      </div>
+      <button class="btn btn-info col-sm-2 col-sm-offset-right-4 col-xs-2" type="submit" name='AddChat'>POST!</button>
+    </div>
+</form>
 </div>
-<div class="col-sm-8">
-    <p>Naam: Jeroen de Reus</p>
-    <p>GitHub: jdereus87</p>
-    <p>Followers: 6</p>
-    <p>Following: 6</p>
-    <p>Repositories: 12</p>
-<div class="progress-bar" role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    70%
-  </div>
-</div> -->
+<div class="container chatcontainer">
+        
+</div>
 </div>
 
 
+<?php
+if(isset($_POST['AddChat'])) {
+    require('addchat.php');
+    header('Location: chat.php');
+}
+?>
 
 <div class="push">
     

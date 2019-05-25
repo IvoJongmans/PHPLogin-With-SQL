@@ -105,10 +105,6 @@ body {
      list-style-type: none;
  }
 
- #contactcontainer {
-     display: none;
- }
-
  .messageboxleft {
      color: #314059;
      border: 3px solid #314059;
@@ -127,10 +123,6 @@ body {
      width: 60%;
      margin-top: 5px;
      text-align: right;
- }
-
- #chatcontainer {
-     display: none;
  }
 
  @media only screen and (max-width: 815px) {

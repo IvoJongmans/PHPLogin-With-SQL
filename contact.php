@@ -64,24 +64,19 @@
     <button>EDIT</button>
 </div>
 
-<div class="container toggle" id="homecontainer">
-    <!-- <div class="col-sm-4 text-center">
-<img src="jeroen.jfif" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br>
-</div>
-<div class="col-sm-8">
-    <p>Naam: Jeroen de Reus</p>
-    <p>GitHub: jdereus87</p>
-    <p>Followers: 6</p>
-    <p>Following: 6</p>
-    <p>Repositories: 12</p>
-<div class="progress-bar" role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    70%
-  </div>
-</div> -->
-</div>
+<div class="container text-center toggle" id="contactcontainer">
+    <div class="col-sm-6" id="coninfo">
+        <h3>Contact</h3>
+        Ivo Jongmans<br/>
+        Sint Jansstraat 15B<br/>
+        9712JM Groningen<br/>
+        0592-378639
 
-
+    </div>
+    <div class="col-sm-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.9213957308166!2d6.565878539806426!3d53.21925771880466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd54aca0e929%3A0x8c77e014ff64ac27!2sCodegorilla!5e0!3m2!1snl!2snl!4v1558686050996!5m2!1snl!2snl" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
 
 <div class="push">
     

@@ -57,19 +57,65 @@ $.ajax({
     }
 });
 
-const client_id = "Iv1.bdbb999f6089796d";
-const client_secret = "4b11f98dd4e67f3bf44a3bce22be6d6a57f274b9";
+$.ajax({
+    url: 'getuserdata.php',
+    method: 'POST',
+    success: function(data) {
+    var githubuser = data.github;
+    
+    const client_id = "Iv1.bdbb999f6089796d";
+    const client_secret = "4b11f98dd4e67f3bf44a3bce22be6d6a57f274b9";
 
-const fetchUsers = async (user) => {
+    const fetchUsers = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`);
     const data = await api_call.json();
     return { data }
-};
+    };
 
-const showData = () => {
-    fetchUsers("IvoJongmans").then((res) => {
-        console.log(res);
+    const showData = () => {
+    fetchUsers(githubuser).then((res) => {
+        console.log(res.data);
+        percentage = ((res.data.public_repos / 25) * 100).toFixed(2);
+        console.log(percentage);
+        $("#homecontainer").append(`<div class="col-sm-4 text-center">
+        <img src=${res.data.avatar_url} class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br>
+        </div>
+        <div class="col-sm-8">
+            <p>Naam: ${res.data.name}</p>
+            <p>GitHub: ${res.data.login}</p>
+            <p>Followers: ${res.data.followers}</p>
+            <p>Following: ${res.data.following}</p>
+            <p>Repositories: ${res.data.public_repos}/25</p>
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="${percentage}"
+          aria-valuemin="0" aria-valuemax="100" style="width:${percentage}%">
+          ${percentage}%
+          </div>
+        </div>`);
     })
-};
+    };
 
-showData();
+    showData();
+        
+    },
+    error: function (error) {
+        console.log(error);
+    }
+});
+
+
+// const client_id = "Iv1.bdbb999f6089796d";
+// const client_secret = "4b11f98dd4e67f3bf44a3bce22be6d6a57f274b9";
+
+// const fetchUsers = async (user) => {
+//     const api_call = await fetch(`https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`);
+//     const data = await api_call.json();
+//     return { data }
+// };
+
+// const showData = () => {
+//     fetchUsers("IvoJongmans").then((res) => {
+//         console.log(res);
+//     })
+// };
+
+// showData();
