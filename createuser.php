@@ -9,6 +9,7 @@ $newstreet = $_POST['new_user_street'];
 $newzcode = $_POST['new_user_zcode'];
 $newcity = $_POST['new_user_city'];
 $newemail = $_POST['new_user_email'];
+$newgithub = $_POST['new_user_github'];
 $sql = "INSERT INTO userdata (username, password) VALUES ('$newusername', '$newpassword')";
 $addnewuser = $conn->prepare($sql);
 // Ik moet de parameters nog binden. Excuus.
@@ -21,13 +22,14 @@ $sqlcreatetable = "CREATE TABLE $newusername (
     street varchar(255) NOT NULL,
     zipcode varchar(255) NOT NULL,
     city varchar(255) NOT NULL,
-      email varchar(255) NOT NULL
+      email varchar(255) NOT NULL,
+      github varchar(255) NOT NULL
   )";
   $createtable = $conn->prepare($sqlcreatetable);
   $createtable->execute();
   $sqlstorenewuser = "INSERT INTO $newusername (name, lastname, street, 
-                    zipcode, city, email) values ('$newname', '$newlastname', 
-                    '$newstreet', '$newzcode', '$newcity', '$newemail')";
+                    zipcode, city, email, github) values ('$newname', '$newlastname', 
+                    '$newstreet', '$newzcode', '$newcity', '$newemail', '$newgithub')";
   $storenewuser = $conn->prepare($sqlstorenewuser);
   $storenewuser->execute();
   header('Location: index.php');

@@ -56,3 +56,20 @@ $.ajax({
         console.log(error);
     }
 });
+
+const client_id = "Iv1.bdbb999f6089796d";
+const client_secret = "4b11f98dd4e67f3bf44a3bce22be6d6a57f274b9";
+
+const fetchUsers = async (user) => {
+    const api_call = await fetch(`https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`);
+    const data = await api_call.json();
+    return { data }
+};
+
+const showData = () => {
+    fetchUsers("IvoJongmans").then((res) => {
+        console.log(res);
+    })
+};
+
+showData();

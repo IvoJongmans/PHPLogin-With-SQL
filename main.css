@@ -129,6 +129,10 @@ body {
      text-align: right;
  }
 
+ #chatcontainer {
+     display: none;
+ }
+
  @media only screen and (max-width: 815px) {
      #navlist {
          display: none;
