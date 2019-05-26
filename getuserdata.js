@@ -112,6 +112,7 @@ var commits = 0;
 const fetchRepos = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}/repos?client_id=${client_id}&client_secret=${client_secret}`);
     const data = await api_call.json();
+    console.log(data);
     return { data }
 };
 

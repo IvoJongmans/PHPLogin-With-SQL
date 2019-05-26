@@ -17,6 +17,10 @@ body {
      padding-left: 10px;
  }
 
+ #navlist li a {
+     color: #f2ec3e;
+ }
+
  #navlist li:hover {
      text-decoration: underline;
  }
@@ -76,6 +80,10 @@ body {
  #hamburger {
      display: none;
  }
+
+.results {
+    font-size: 20px;
+}
 
  .push {
     height: 60px;
