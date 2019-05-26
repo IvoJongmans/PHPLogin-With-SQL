@@ -80,20 +80,27 @@ $.ajax({
         $("#homecontainer").append(`<div class="col-sm-4 text-center">
         <img src=${res.data.avatar_url} class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8 results">
             <p>Naam: ${res.data.name}</p>
             <p>GitHub: ${res.data.login}</p>
             <p>Followers: ${res.data.followers}</p>
             <p>Following: ${res.data.following}</p>
             <p>Repositories: ${res.data.public_repos}/25</p>
-            <p>Commits: </p>
-        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="${percentage}"
-          aria-valuemin="0" aria-valuemax="100" style="width:${percentage}%">
-          ${percentage}%
-          </div>
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="${percentage}"
+            aria-valuemin="0" aria-valuemax="100" style="width:${percentage}%">
+            ${percentage}%
+            </div>
+            <br/><br/>    
+            <i class="fas fa-spinner fa-spin loading"></i>        
         </div>`);
     })
     };
+
+    $(function() {
+        setTimeout(function() {
+            $(".loading").hide()
+        }, 2000);
+    });
 
     showData();
 
@@ -137,7 +144,14 @@ setTimeout(function countCommits() {
   }, 1000)
 
   setTimeout(function showCommits(){
-    $("#homecontainer").append(commits);
+    percentagecommits = ((commits / 500) * 100).toFixed(2);
+    $(".results").append(`<p>Commits: ${commits}/500</p>
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="${percentagecommits}"
+            aria-valuemin="0" aria-valuemax="100" style="width:${percentagecommits}%">
+            ${percentagecommits}%
+            </div>
+    `);
+
   }, 2000)
 
         
